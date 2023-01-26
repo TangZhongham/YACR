@@ -10,8 +10,14 @@ import SwiftUI
 @main
 struct YACRApp: App {
     var body: some Scene {
-        DocumentGroup(newDocument: YACRDocument()) { file in
-            ContentView(document: file.$document)
+        WindowGroup{
+            NavigationView{
+//                YACRView()
+                ExampleView()
+            }
         }
+//        DocumentGroup(newDocument: YACRDocument()) { file in
+//            ContentView(document: file.$document)
+//        }
     }
 }

@@ -17,7 +17,7 @@ extension UTType {
 struct YACRDocument: FileDocument {
     var text: String
 
-    init(text: String = "Hello, world!") {
+    init(text: String = "Text here plz ❤️") {
         self.text = text
     }
 

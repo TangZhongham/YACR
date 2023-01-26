@@ -15,6 +15,10 @@
 		11A2F5192980CA1C000E3190 /* YACRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2F5182980CA1C000E3190 /* YACRTests.swift */; };
 		11A2F5232980CA1C000E3190 /* YACRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2F5222980CA1C000E3190 /* YACRUITests.swift */; };
 		11A2F5252980CA1C000E3190 /* YACRUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2F5242980CA1C000E3190 /* YACRUITestsLaunchTests.swift */; };
+		11A2F532298275BA000E3190 /* YACRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2F531298275BA000E3190 /* YACRView.swift */; };
+		11A2F5352982891C000E3190 /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 11A2F5342982891C000E3190 /* CodeEditor */; };
+		11A2F5372982A0DC000E3190 /* MyEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2F5362982A0DC000E3190 /* MyEditor.swift */; };
+		11A2F5392982A1D1000E3190 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2F5382982A1D1000E3190 /* ExampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		11A2F51E2980CA1C000E3190 /* YACRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YACRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A2F5222980CA1C000E3190 /* YACRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YACRUITests.swift; sourceTree = "<group>"; };
 		11A2F5242980CA1C000E3190 /* YACRUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YACRUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11A2F531298275BA000E3190 /* YACRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YACRView.swift; sourceTree = "<group>"; };
+		11A2F5362982A0DC000E3190 /* MyEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEditor.swift; sourceTree = "<group>"; };
+		11A2F5382982A1D1000E3190 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		11A2F53A2982A587000E3190 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A2F5352982891C000E3190 /* CodeEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				11A2F5042980CA19000E3190 /* YACRApp.swift */,
+				11A2F53A2982A587000E3190 /* README.md */,
 				11A2F5062980CA19000E3190 /* YACRDocument.swift */,
 				11A2F5082980CA19000E3190 /* ContentView.swift */,
+				11A2F531298275BA000E3190 /* YACRView.swift */,
+				11A2F5362982A0DC000E3190 /* MyEditor.swift */,
+				11A2F5382982A1D1000E3190 /* ExampleView.swift */,
 				11A2F50A2980CA1B000E3190 /* Assets.xcassets */,
 				11A2F50F2980CA1B000E3190 /* Info.plist */,
 				11A2F50C2980CA1B000E3190 /* Preview Content */,
@@ -148,6 +161,9 @@
 			dependencies = (
 			);
 			name = YACR;
+			packageProductDependencies = (
+				11A2F5342982891C000E3190 /* CodeEditor */,
+			);
 			productName = YACR;
 			productReference = 11A2F5012980CA19000E3190 /* YACR.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +236,9 @@
 				Base,
 			);
 			mainGroup = 11A2F4F82980CA19000E3190;
+			packageReferences = (
+				11A2F5332982891C000E3190 /* XCRemoteSwiftPackageReference "CodeEditor" */,
+			);
 			productRefGroup = 11A2F5022980CA19000E3190 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,7 +283,10 @@
 			files = (
 				11A2F5052980CA19000E3190 /* YACRApp.swift in Sources */,
 				11A2F5072980CA19000E3190 /* YACRDocument.swift in Sources */,
+				11A2F5372982A0DC000E3190 /* MyEditor.swift in Sources */,
 				11A2F5092980CA19000E3190 /* ContentView.swift in Sources */,
+				11A2F532298275BA000E3190 /* YACRView.swift in Sources */,
+				11A2F5392982A1D1000E3190 /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11A2F5332982891C000E3190 /* XCRemoteSwiftPackageReference "CodeEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZeeZide/CodeEditor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11A2F5342982891C000E3190 /* CodeEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11A2F5332982891C000E3190 /* XCRemoteSwiftPackageReference "CodeEditor" */;
+			productName = CodeEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11A2F4F92980CA19000E3190 /* Project object */;
 }
